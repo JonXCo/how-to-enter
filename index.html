@@ -1,4 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooheys Easter Promotion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        header img {
+            max-width: 100%;
+        }
+        h1 {
+            color: #012060;
+            font-size: 50px;
+        }
+        p {
+            color: #012060;
+            font-size: 25px;
+        }
+        .last-paragraph {
+            font-size: 25px;
+        }
+        .top {
+            margin: 50px;
+        }
+        section {
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        .blue-section {
+            background-color: #012060;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
 
+        .blue-section .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, auto);
+            gap: 10px;
+            padding: 0 20px;
+            margin: 10px;
+        }
+
+        .blue-section .box {
+            text-align: center;
+            /* border: 10px solid white;
+            border-radius: 20px; */
+            /* padding: 5px; */
+            /* margin: 5px; Adjust margin between boxes */
+        }
+
+        .blue-section .box img {
+            width: 10px;
+            /* margin-bottom: 10px; */
+            /* margin: 100px; */
+        }
+
+        .blue-section .box p {
+            /* font-weight: bold; */
+            color: white;
+            font-size: 15px;
+        }
+        .blue-section .box h2 {
+            /* font-weight: bold; */
+            color: white;
+            font-size: 15px;
+        }
+        .material-symbols-outlined {
+            font-size: 50px;
+            margin-top: 10px;
+            /* padding: 20px; */
+        }
+
+        .read-button {
+            border-radius: 7.5px;
+            background-color: #BA0C2F;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
             cursor: pointer;
             min-height: 50px;
             min-width: 150px;
@@ -29,16 +121,23 @@
             color: #fff;
         }
 
-        @media only screen and (max-width: 1000px) {
+        @media only screen and (min-width: 600px) {
             /* Styles specific to devices narrower than 600px */
-            .store-logos {
-                display: flex;
-                flex-direction: column; /* Stack logos vertically */
-                align-items: center; /* Center logos horizontally */
+            .blue-section .box p {
+                /* font-weight: bold; */
+                color: white;
+                font-size: 20px;
             }
-            .store-logo {
-                margin: 10px 0; /* Adjust margin between logos */
+            .blue-section .box h2 {
+                /* font-weight: bold; */
+                color: white;
+                font-size: 30px;
             }
+            .material-symbols-outlined {
+            font-size: 100px;
+            margin-top: 10px;
+            /* padding: 20px; */
+        }
         }
 
     </style>
@@ -58,15 +157,15 @@
                     <h1></h1>
                 </div>
                 <div class="box">
-                    <p>MATCH 2</p>
+                    <h2>MATCH 2</h2>
                     <span class="material-symbols-outlined">filter_2</span>
                 </div>
                 <div class="box">
-                    <p>MATCH 3</p>
+                    <h2>MATCH 3</h2>
                     <span class="material-symbols-outlined">filter_3</span>
                 </div>
                 <div class="box">
-                    <p>MATCH 4</p>
+                    <h2>MATCH 4</h2>
                     <span class="material-symbols-outlined">filter_4</span>
                 </div>
                 <div class="box">
