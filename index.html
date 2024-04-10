@@ -52,32 +52,47 @@
             gap: 10px;
             padding: 0 20px;
             margin: 10px;
+            /* align-items: center; Center content vertically */
+            /* justify-items: center; Center content horizontally */
         }
 
         .blue-section .box {
             text-align: center;
-            /* border: 10px solid white;
-            border-radius: 20px; */
-            /* padding: 5px; */
-            /* margin: 5px; Adjust margin between boxes */
+            padding: 20px; /* Add padding to ensure consistent background size */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
+        .blue-section .container > div:nth-child(1),
+        .blue-section .container > div:nth-child(2),
+        .blue-section .container > div:nth-child(3),
+        .blue-section .container > div:nth-child(4),
+        .blue-section .container > div:nth-child(9),
+        .blue-section .container > div:nth-child(10),
+        .blue-section .container > div:nth-child(11),
+        .blue-section .container > div:nth-child(12),
+        .blue-section .container > div:nth-child(17),
+        .blue-section .container > div:nth-child(18),
+        .blue-section .container > div:nth-child(19),
+        .blue-section .container > div:nth-child(20) {
+            background-color: #000; /* Apply the color to the first four children */
+        }
+        
         .blue-section .box img {
             width: 10px;
             /* margin-bottom: 10px; */
             /* margin: 100px; */
         }
 
-        .blue-section .box p {
-            /* font-weight: bold; */
-            color: white;
-            font-size: 15px;
-        }
+        .blue-section .box p,
         .blue-section .box h2 {
             /* font-weight: bold; */
             color: white;
             font-size: 15px;
         }
+
         .material-symbols-outlined {
             font-size: 50px;
             margin-top: 10px;
