@@ -24,6 +24,10 @@
             padding: 10px;
             text-align: center;
         }
+        h2 {
+            text-align: center;
+            
+        }
         header img {
             max-width: 100%;
         }
@@ -50,19 +54,16 @@
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             grid-template-rows: repeat(5, auto);
-            gap: 10px;
-            /* padding: 0 20px; */
+            gap: 10px 0px; /* Adjust the gap between the boxes */
             margin-left: 10px;
             margin-right: 10px;
             padding-left: 15px;
             padding-right: 15px;
-            /* align-items: center; Center content vertically */
-            /* justify-items: center; Center content horizontally */
         }
 
         .blue-section .box {
             text-align: center;
-            padding: 20px; /* Add padding to ensure consistent background size */
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -88,6 +89,17 @@
             margin-top: 10px;
             color: #fff;
             /* padding: 20px; */
+        }
+
+        .blue-section .box:nth-child(5),
+        .blue-section .box:nth-child(6),
+        .blue-section .box:nth-child(7),
+        .blue-section .box:nth-child(8),
+        .blue-section .box:nth-child(13),
+        .blue-section .box:nth-child(14),
+        .blue-section .box:nth-child(15),
+        .blue-section .box:nth-child(16)  {
+            background-color: #BA0C2F; /* Apply the color to the first four boxes */
         }
 
         .read-button {
@@ -141,14 +153,15 @@
             max-width: 300px; /* Set the maximum width of the image */
             max-height: 100px; /* Set the maximum height of the image */
         }
-
         .tile img {
-            min-width: 300px; /* Set the maximum width of the image */
-            min-height: 100px; /* Set the maximum height of the image */
+            min-width: 100px; /* Set the maximum width of the image */
+            max-width: 200px; /* Set the maximum width of the image */
         }
 
-
-
+        .jersey img {
+            
+            max-width: 50px; /* Set the maximum width of the image */
+        }
         @media only screen and (min-width: 600px) {
             /* Styles specific to devices narrower than 600px */
             .blue-section .box p {
@@ -179,12 +192,14 @@
             }
             .blue-section .container {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(5, auto);
-                gap: 10px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
             .enter p {
                 font-size: 20px;
+            }
+            .tile img {
+                min-width: 300px; /* Set the maximum width of the image */
+                min-height: 100px; /* Set the maximum height of the image */
             }
         }
 
@@ -195,8 +210,8 @@
         <img src="LIONVO0147_Tooheys_Coles_SoO_Roilti_Desktop_Header_1950x350px_FA.jpg" alt="Tooheys Banner">
     </header>
     <section class="top">
-        <p>Purchase any Limited Edition Tooheys carton to share from any Liquorland, First Choice Liquor or Vintage Cellars.<br></p>
-        <p>Find your Unique Code located inside your carton & enter your details.</p>
+        <h2>Purchase any Limited Edition Tooheys carton to share from any Liquorland, First Choice Liquor or Vintage Cellars.<br></h2>
+        <h2>Find your Unique Code located inside your carton & enter your details.</h2>
     </section>
     <section>
         <div class="blue-section">
@@ -237,7 +252,7 @@
                     <a class="tile">
                         <img src="Player_Jersey_Image_Cropped.png" alt="Jersey">
                     </a> 
-                    <p>Tooheys Retro Jersey RRP $100.</p>
+                    <!-- <p>Tooheys Retro Jersey RRP $100.</p> -->
                 </div>
                 <div class="box">
                     <a class="tile">
@@ -251,14 +266,10 @@
                     <p></p>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">connected_tv</span>
-                    <p>$50 Prezzee Hubbl eGift card</p>
+                    <h2>$25</h2>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">connected_tv</span>
-                    <p>$25 Prezzee Hubbl eGift card</p>
+                    <h2>$50</h2>
                 </div>
                 <div class="box">
                     <a class="tile">
@@ -267,19 +278,13 @@
                     <p>Digital Vault Prepaid Gift Card, redeemable at Liquorland, First Choice or Vintage Cellars stores within Australia.</p>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">sports_bar</span>
-                    <p>$10 beer voucher.</p>
+                    <h2>$10</h2>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">sports_bar</span>
-                    <p>$15 beer voucher.</p>
+                    <h2>$15</h2>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">sports_bar</span>
-                    <p>$20 beer voucher.</p>
+                    <h2>$20</h2>
                 </div>
                 <div class="box">
                     <a class="tile">
@@ -288,19 +293,13 @@
                     <p>Prezzee Coles Grocery Giftcard redeemable at any Coles store within Australia (excludes online).</p>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">grocery</span>
-                    <p>$5 Prezzee Coles Grocery Giftcard.</p>
+                    <h2>$5</h2>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">grocery</span>
-                    <p>$5 Prezzee Coles Grocery Giftcard.</p>
+                    <h2>$10</h2>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">grocery</span>
-                    <p>$5 Prezzee Coles Grocery Giftcard.</p>
+                    <h2>$20</h2>
                 </div>
                 <span class="material-symbols-outlined"></span>
                 <p></p>
