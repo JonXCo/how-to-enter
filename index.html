@@ -27,28 +27,23 @@
         header img {
             max-width: 100%;
         }
-        h1 {
-            color: #012060;
-            font-size: 50px;
-        }
         p {
             color: #012060;
-            font-size: 25px;
+            font-size: 20px;
         }
         .top {
-            margin: 50px;
+            padding-left: 30px;
         }
         section {
             background-color: #fff;
-            margin-top: 20px;
+            /* margin-top: 20px; */
         }
         .blue-section {
             background-color: #fff;
             color: #BA0C2F;
-            padding: 20px 0;
+            padding-top: 15px;
             text-align: center;
             width: 100%;
-            margin: 0;
         }
 
         .blue-section .container {
@@ -56,8 +51,11 @@
             grid-template-columns: 2fr 1fr 1fr 1fr;
             grid-template-rows: repeat(5, auto);
             gap: 10px;
-            padding: 0 20px;
-            margin: 10px;
+            /* padding: 0 20px; */
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
             /* align-items: center; Center content vertically */
             /* justify-items: center; Center content horizontally */
         }
@@ -102,6 +100,7 @@
             cursor: pointer;
             min-height: 50px;
             min-width: 150px;
+            margin-top: 30px;
         }
 
         .enter {
@@ -116,19 +115,39 @@
             align-items: center; /* Vertically align items */
         }
 
+        .enter p {
+            font-size: 15px;
+        }
+
         .enter .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 50px;
-            margin: 10px;
+            /* margin: 10px; */
             vertical-align: text-top;
         }
 
         .highlight {
             background-color:#BA0C2F;
             color: #fff;
-            font-size: 15px;
+            font-size: 35px;
         }
+
+        .fc-logo img {
+            max-width: 300px; /* Set the maximum width of the image */
+            max-height: 200px; /* Set the maximum height of the image */
+        }
+        .vc-logo img {
+            max-width: 300px; /* Set the maximum width of the image */
+            max-height: 100px; /* Set the maximum height of the image */
+        }
+
+        .tile img {
+            min-width: 300px; /* Set the maximum width of the image */
+            min-height: 100px; /* Set the maximum height of the image */
+        }
+
+
 
         @media only screen and (min-width: 600px) {
             /* Styles specific to devices narrower than 600px */
@@ -144,18 +163,18 @@
             }
             h1 {
                 color: #012060;
-                font-size: 30px;
+                font-size: 50px;
             }
             p {
                 color: #012060;
-                font-size: 15px;
+                font-size: 25px;
             }
             .highlight {
-                font-size: 30px;
+                font-size: 50px;
             }
             .material-symbols-outlined {
             font-size: 100px;
-            margin-top: 10px;
+            /* margin-top: 10px; */
             /* padding: 20px; */
             }
             .blue-section .container {
@@ -163,10 +182,9 @@
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(5, auto);
                 gap: 10px;
-                padding: 0 20px;
-                margin: 10px;
-                /* align-items: center; Center content vertically */
-                /* justify-items: center; Center content horizontally */
+            }
+            .enter p {
+                font-size: 20px;
             }
         }
 
@@ -200,8 +218,9 @@
                     <span class="material-symbols-outlined">filter_4</span>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">package_2</span>
+                    <a class="tile">
+                        <img src="Jersey_Offer_Combined.png" alt="Jersey">
+                    </a> 
                     <p>Tooheys Retro Jersey RRP $100</p>
                 </div>
                 <div class="box">
@@ -215,13 +234,15 @@
                     <p></p>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">apparel</span>
+                    <a class="tile">
+                        <img src="Player_Jersey_Image_Cropped.png" alt="Jersey">
+                    </a> 
                     <p>Tooheys Retro Jersey RRP $100.</p>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">package_2</span>
+                    <a class="tile">
+                        <img src="Sport_Offer_Combined.png" alt="Jersey">
+                    </a> 
                     <p>Prezzee Hubbl eGift card</p>
                 </div>
                 <div class="box">
@@ -240,8 +261,9 @@
                     <p>$25 Prezzee Hubbl eGift card</p>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">package_2</span>
+                    <a class="tile">
+                        <img src="Beer_Offer_Combined.png" alt="Jersey">
+                    </a> 
                     <p>Digital Vault Prepaid Gift Card, redeemable at Liquorland, First Choice or Vintage Cellars stores within Australia.</p>
                 </div>
                 <div class="box">
@@ -260,8 +282,9 @@
                     <p>$20 beer voucher.</p>
                 </div>
                 <div class="box">
-
-                    <span class="material-symbols-outlined">package_2</span>
+                    <a class="tile">
+                        <img src="Food_Offer_Combined.png" alt="Jersey">
+                    </a> 
                     <p>Prezzee Coles Grocery Giftcard redeemable at any Coles store within Australia (excludes online).</p>
                 </div>
                 <div class="box">
@@ -293,7 +316,12 @@
                 </div>
                 <div class="box">
                     <p>Tempted to play?<br>Find your nearest retailer outlet</p>
-                    <a class="store-logo" href="https://wa.thirstycamel.com.au/"><img src="https://www.lmg.com.au/wp-content/uploads/2020/09/tclogoforweb-e1601340927230.png" alt="Thirsty Camel WA"></a>
+                    <a class="fc-logo" href="https://www.firstchoiceliquor.com.au/stores" target="_blank">
+                        <img src="GEO0180_First Choice_Footer_Lockup copy.png" alt="First Choice Liquor">
+                    </a>
+                    <a class="vc-logo" href="https://www.vintagecellars.com.au/stores" target="_blank">
+                        <img src="GEO0180_Vintage Cellars_Footer_Lockup copy 2.png" alt="Vintage Cellars">
+                    </a>                    
                 </div>
             </div>
         </div>
